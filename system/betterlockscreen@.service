@@ -7,6 +7,7 @@ Before=suspend.target
 User=%I
 Type=simple
 Environment=DISPLAY=:0
+ExecStartPre=/usr/bin/setxkbmap us
 ExecStart=/usr/bin/betterlockscreen --lock
 TimeoutSec=infinity
 ExecStartPost=/usr/bin/sleep 1
